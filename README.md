@@ -1,11 +1,13 @@
 # Fortena
 
-> to install npm packages run this command.
+## to install npm packages run this command.
+
     ```
     npm install
     ```
 
-> Follow the format presented in these queries to run fortena
+## Follow the format presented in these queries to run fortena
+
 
 ```
 node fortena.js my-tweets
