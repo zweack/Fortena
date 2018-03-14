@@ -1,10 +1,11 @@
 # Fortena
 
-## to install npm packages run this command.
+## To install npm packages run this command
 
-    ```
-    npm install
-    ```
+
+```
+npm install
+```
 
 ## Follow the format presented in these queries to run fortena
 
