@@ -1,0 +1,15 @@
+{
+  "name": "fortena",
+  "version": "1.0.0",
+  "description": "Fortena is a Language Interpretation and Recognition Interface",
+  "main": "fortena.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jeet Jain",
+  "license": "ISC",
+  "dependencies": {
+    "request": "^2.74.0",
+    "twitter": "^1.2.5"
+  }
+}
