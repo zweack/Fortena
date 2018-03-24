@@ -10,27 +10,26 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.set('view engine', 'ejs')
 
 app.get('/', function (req, res) {
-  res.render('index', { Movie: null, error: null });
+  res.render('index', {Movie: null, error: null});
 })
 
 app.post('/', function (req, res) {
   let movieName = req.body.movieInput;
-  let url = "http://www.omdbapi.com/?i=tt3896198&apikey=" + apiKey + "&t=" + movieName + "&y=&plot=full&tomatoes=true&r=json"
+  let url = "http://www.omdbapi.com/?i=tt3896198&apikey="+apiKey+"&t=" + movieName + "&y=&plot=full&tomatoes=true&r=json"
 
   request(url, function (err, response, body) {
-    if (err) {
-      res.render('index', { Movie: null, error: 'Error, please try again' });
+    if(err){
+      res.render('index', {Movie: null, error: 'Error, please try again'});
     } else {
       let MovieDetails = JSON.parse(body)
-      if (MovieDetails.Response == false) {
-        res.render('index', { Movie: null, error: 'Error, please try again' });
+      if(MovieDetails.Response==false){
+        res.render('index', {Movie: null, error: 'Error, please try again'});
       } else {
-        res.render('index', { Movie: MovieDetails, error: null });
+        res.render('index', {Movie: MovieDetails, error: null});
       }
     }
   });
 })
-
 
 const port = process.env.PORT || 3000;
 
