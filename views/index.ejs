@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Fortena welcomes you</title>
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+  <div class="container">
+    <fieldset>
+      <form action="/" method="post" class="narrow">
+        <input name="movieInput" type="text" class="ghost-input" placeholder="Enter a Movie" required>
+        <br>
+        <input type="submit" class="ghost-button" value="Get Movie">
+      </form>
+      <% if(Movie !== null){ %>
+        <img src="<%= Movie.Poster %>" class="side"></img>
+        <p>
+          <b>Title :</b>
+          <%= Movie.Title %>
+        </p>
+        <p>
+          <b>IMDB :</b>
+          <%= Movie.imdbRating %> &nbsp&nbsp&nbsp
+            <b>Genre :</b>
+            <%= Movie.Genre %>
+        </p>
+        <p>
+          <b>Director :</b>
+          <%= Movie.Director %> &nbsp&nbsp&nbsp</p>
+        <p>
+          <b>Actors :</b>
+          <%= Movie.Actors %>
+        </p>
+        <p>
+          <b>Year :</b>
+          <%= Movie.Year %> &nbsp&nbsp&nbsp
+            <b>Run Time :</b>
+            <%= Movie.Runtime %>
+        </p>
+        <p>
+          <b>Plot :</b>
+          <%= Movie.Plot %>
+        </p>
+        <% } %>
+
+          <% if(error !== null){ %>
+            <p>
+              <%= error %>
+            </p>
+            <% } %>
+    </fieldset>
+  </div>
+</body>
+
+</html>

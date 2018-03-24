@@ -1,15 +1,25 @@
 {
   "name": "fortena",
   "version": "1.0.0",
-  "description": "Fortena is a Language Interpretation and Recognition Interface",
-  "main": "fortena.js",
+  "description": "",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zweack/Fortena.git"
   },
   "author": "Jeet Jain",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zweack/Fortena/issues"
+  },
+  "homepage": "https://github.com/zweack/Fortena#readme",
   "dependencies": {
-    "request": "^2.74.0",
-    "twitter": "^1.2.5"
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "request": "^2.81.0"
   }
 }
