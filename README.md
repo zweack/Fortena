@@ -1,15 +1,19 @@
 # Fortena : Find details of your favorite movies
 
-## To install npm packages run this command
+### Fortena can find all the details of your  favorite movies. The app uses API data from Open Movie Database (OMDB). Check out the **[Live Demo]()**
 
+## To run the app in your local environment
+
+Run this command to install npm packages
 
 ```
 npm install
 ```
 
-## To run the app locally, run this command
-
+To launch the app, run this command
 
 ```
 node server.js 
 ```
+
+
