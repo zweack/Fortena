@@ -1,4 +1,4 @@
-# Fortena
+# Fortena : Find details of your favorite movies
 
 ## To install npm packages run this command
 
@@ -7,11 +7,9 @@
 npm install
 ```
 
-## Follow the format presented in these queries to run fortena
+## To run the app locally, run this command
 
 
 ```
-node fortena.js my-tweets
-node fortena.js movie-this '<movie name here>'
-node fortena.js do-what-it-says 
+node server.js 
 ```
