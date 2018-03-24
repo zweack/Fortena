@@ -77,3 +77,8 @@ p {
   float: right;
   padding: 10px;
 }
+
+.heading {
+  color: #4b545f;
+  font-size: 28px;
+}
