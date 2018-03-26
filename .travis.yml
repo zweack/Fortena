@@ -5,7 +5,7 @@ notifications:
   email: false
 deploy:
   provider: heroku
-  app: heroku-badge
+  app: fortena
   api_key:
     secure: iPPYeMiQ1IUuLW4V8CzaiA
 before_deploy:
