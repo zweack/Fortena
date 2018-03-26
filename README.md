@@ -1,5 +1,4 @@
-# Fortena : [![Build Status](https://travis-ci.org/zweack/Fortena.svg?branch=master)](https://travis-ci.org/zweack/Fortena) ![Heroku](https://heroku-badge.herokuapp.com/?app=heroku-badge)
-## Find details of your favorite movies 
+# Fortena : Find details of your favorite movies  [![Build Status](https://travis-ci.org/zweack/Fortena.svg?branch=master)](https://travis-ci.org/zweack/Fortena)
 
 ### Fortena can find all the details of your  favorite movies. The app uses API data from Open Movie Database (OMDB). Check out the **[Live Demo](https://fortena.herokuapp.com)**
 
