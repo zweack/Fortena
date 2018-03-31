@@ -1,14 +1,26 @@
+// App Starting Point : server.js
+
+// Required Packages for Fortena
 const express = require('express');
 const bodyParser = require('body-parser');
 const request = require('request');
+
+//Initilization of Express Middleware
 const app = express()
 
-const apiKey = '5c1518cd';
+// OMDB API key
+const apiKey = '********';
 
+//Static Folder for Styles
 app.use(express.static('public'));
+
+//BodyParser Middleware
 app.use(bodyParser.urlencoded({ extended: true }));
+
+//View Engine for rendering pages
 app.set('view engine', 'ejs')
 
+// Route for homepage
 app.get('/', function (req, res) {
   res.render('index', {Movie: null, error: null});
 })
@@ -31,8 +43,10 @@ app.post('/', function (req, res) {
   });
 })
 
+// Set Port
 const port = process.env.PORT || 3000;
 
+// Start server
 app.listen(port, () => {
   console.log(`Server started on ${port}`);
 })
