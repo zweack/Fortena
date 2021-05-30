@@ -9,7 +9,7 @@ const request = require('request');
 const app = express()
 
 // OMDB API key
-const apiKey = '********';
+const apiKey = process.env.APIKEY;
 
 //Static Folder for Styles
 app.use(express.static('public'));
