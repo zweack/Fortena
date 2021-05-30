@@ -7,6 +7,9 @@
     "start": "node server.js",
     "test": "mocha"
   },
+  "engines": {
+    "node": "10.16.0"
+  }
   "repository": {
     "type": "git",
     "url": "https://github.com/zweack/Fortena"
