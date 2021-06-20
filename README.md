@@ -1,7 +1,8 @@
 # Fortena : Find details of your favorite movies  
 ![npm](https://img.shields.io/badge/version-1.0.0.0-brightgreen.svg)   [![Build Status](https://img.shields.io/badge/build-passing-brightgreen.svg)](https://travis-ci.org/zweack/Fortena)  ![npm](https://img.shields.io/npm/v/npm.svg)  
 
-### Fortena can find all the details of your  favorite movies. The app uses API data from Open Movie Database (OMDB). Check out the **[Live Demo](https://fortena.herokuapp.com)**
+### Fortena can find all the details of your  favorite movies. The app uses API data from Open Movie Database (OMDB). Check out the **[app](https://fortena.herokuapp.com)**
+![alt text](https://raw.githubusercontent.com/zweack/Fortena/master/static/fortena_demo.gif)
 
 ## To run the app in your local environment
 
